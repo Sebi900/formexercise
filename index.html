@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../form-exercise/src/style.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
     <title>Form Exercise</title>
   </head>
-  <body>
-    <div id="leftSide">
+  <body class="grid grid-cols-2">
+    <div id="leftSide" class="flex">
       <img src="" alt="Logo" />
-      <h3>Tell us a little about your Store.</h3>
+      <h3 class="">Tell us a little about your Store.</h3>
       <p>
         This is an inital information of your bussiness. <br />
         You change it anytime.
@@ -23,8 +23,9 @@
           placeholder="Store Name"
         />
         <fieldset>
-          <label for="industry"></label>
-          <select name="" id="industry">
+          <label for="industry-select"></label>
+          <select name="industry" id="industry-select">
+            <option value="">Industry</option>
             <option value="clothing">Clothing</option>
             <option value="distribution">Distribution</option>
             <option value="marketing">Marketing</option>
@@ -39,15 +40,29 @@
           />
           This store is registered business.
         </label>
-        <input type="text" placeholder="Company Legal Name" />
-        <input type="text" placeholder="VAT EU Number" />
-        <input type="text" placeholder="Address" />
-        <input type="text" placeholder="ZIP Code" />
-        <input type="text" placeholder="City" />
+        <div class="">
+          <input type="text" placeholder="Company Legal Name" />
+          <input type="text" placeholder="VAT EU Number" />
+          <input type="text" placeholder="Address" />
+          <input type="text" placeholder="ZIP Code" />
+          <input type="text" placeholder="City" />
+        </div>
+        <fieldset>
+          <label for="country-select"></label>
+          <select name="country" id="country-select">
+            <option value="">Country</option>
+            <option value="Germany">Germany</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+          </select>
+        </fieldset>
+        <button>Go Back</button>
+        <button>Save and continue</button>
       </form>
     </div>
     <div id="rightSide">
-      <img src="" alt="some Photo" />
+      <img src="./src/public/RightSidePic.png" alt="some Photo" />
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
