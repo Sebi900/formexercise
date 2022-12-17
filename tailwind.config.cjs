@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         Inter: ["Inter", "san-serif"],
       },
+      // backgroundImage: {
+      //   arrow:
+      //     "url('https://www.svgrepo.com/show/100139/up-and-down-small-triangular-arrows.svg')",
+      // },
     },
   },
   plugins: [],

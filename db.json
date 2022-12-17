@@ -1,0 +1,64 @@
+{
+  "registrations": [
+    {
+      "id": 1,
+      "storeName": "test",
+      "industry": "test",
+      "registeredStore": "registered",
+      "companyLegalName": "test",
+      "vatEuNumber": "test",
+      "address": "test",
+      "zipCode": "test",
+      "city": "test",
+      "country": "test"
+    },
+    {
+      "storeName": "gdtertyty",
+      "industry": "distribution",
+      "registeredBusiness": "on",
+      "companyLegalName": "tyertyety",
+      "vatEuNumber": "123456",
+      "address": "rtyjrtyurtyu",
+      "zipCode": "345678",
+      "city": "jryurtyuty",
+      "country": "Germany",
+      "id": 2
+    },
+    {
+      "storeName": "bxcvbc",
+      "industry": "distribution",
+      "registeredBusiness": "on",
+      "companyLegalName": "vbxcvb",
+      "vatEuNumber": "345890",
+      "address": "hfghkfjljl",
+      "zipCode": "4567899",
+      "city": "fghjgkh",
+      "country": "Germany",
+      "id": 3
+    },
+    {
+      "storeName": "rhrtyerty",
+      "industry": "clothing",
+      "registeredBusiness": "on",
+      "companyLegalName": "thdtytry",
+      "vatEuNumber": "tyertyerty",
+      "address": "tryhertyerty",
+      "zipCode": "ertyerty",
+      "city": "rtyerty",
+      "country": "Germany",
+      "id": 4
+    },
+    {
+      "storeName": "fergfgrg",
+      "industry": "distribution",
+      "registeredBusiness": "on",
+      "companyLegalName": "rgwergw",
+      "vatEuNumber": "ergerg",
+      "address": "ergewrg",
+      "zipCode": "ergwerg",
+      "city": "ergwerg",
+      "country": "Germany",
+      "id": 5
+    }
+  ]
+}

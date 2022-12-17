@@ -20,7 +20,7 @@
       <form id="form">
         <input
           type="text"
-          name="Store Name"
+          name="storeName"
           id="store-name"
           placeholder="Store Name"
           class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
@@ -30,9 +30,10 @@
           <select
             name="industry"
             id="industry-select"
-            class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
+            placeholder="Industry"
+            class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3 appearance-none bg-arrow text-gray-400"
           >
-            <option value="">Industry</option>
+            <option class="hidden" disabled selected value>Industry</option>
             <option value="clothing">Clothing</option>
             <option value="distribution">Distribution</option>
             <option value="marketing">Marketing</option>
@@ -44,34 +45,45 @@
               type="checkbox"
               checked
               id="checkbox"
-              name="registered business"
+              name="registeredBusiness"
+              class="accent-[#44756B] w-4 h-4"
             />
-            This store is registered business.
+            This store is registered business
           </label>
         </div>
         <div class="">
           <input
+            name="companyLegalName"
             type="text"
             placeholder="Company Legal Name"
             class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
           />
           <input
-            type="text"
+            id="vatEuNumber"
+            name="vatEuNumber"
+            type="number"
+            maxlength="10"
+            minlength="6"
             placeholder="VAT EU Number"
             class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
           />
           <input
+            name="address"
             type="text"
             placeholder="Address"
             class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
           />
           <div class="flex gap-3">
             <input
-              type="text"
+              name="zipCode"
+              type="number"
+              minlength="5"
+              maxlength="8"
               placeholder="ZIP Code"
               class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
             />
             <input
+              name="city"
               type="text"
               placeholder="City"
               class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
@@ -83,17 +95,24 @@
           <select
             name="country"
             id="country-select"
-            class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3"
+            class="bg-[#D9D9D9] w-full h-12 rounded-xl pl-3 mb-3 appearance-none text-gray-400"
           >
-            <option value="">Country</option>
+            <option class="hidden" disabled selected value>Country</option>
             <option value="Germany">Germany</option>
             <option value="Netherlands">Netherlands</option>
             <option value="Austria">Austria</option>
             <option value="Belgium">Belgium</option>
           </select>
         </fieldset>
-        <button>Go Back</button>
-        <button>Save and continue</button>
+        <div class="flex justify-between mt-3">
+          <button>Go Back</button>
+          <button
+            type="submit"
+            class="bg-[#44756B] h-10 rounded-md items-center px-3"
+          >
+            Save and continue
+          </button>
+        </div>
       </form>
     </div>
     <div id="rightSide">
